@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataStoreforreg">
+
+    <ImageView
+        android:id="@+id/secondmlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondlogoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="FreEdu"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/secondmlogo"
+        app:layout_constraintStart_toStartOf="@+id/secondmlogo"
+        app:layout_constraintTop_toBottomOf="@+id/secondmlogo" />
+
+    <TextView
+        android:id="@+id/secondnameEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextbgc"
+        android:hint="Your username..."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/secondlogoname"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/secondlogoname"
+        app:layout_constraintTop_toBottomOf="@+id/secondlogoname" />
+
+    <TextView
+        android:id="@+id/secondemailEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextbgc"
+        android:hint="Your Email..."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/secondnameEtxt"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/secondnameEtxt"
+        app:layout_constraintTop_toBottomOf="@+id/secondnameEtxt" />
+
+    <TextView
+        android:id="@+id/secondgenderEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbgc"
+        android:hint="Your Gender..."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/secondemailEtxt"
+        app:layout_constraintStart_toStartOf="@+id/secondemailEtxt"
+        app:layout_constraintTop_toBottomOf="@+id/secondemailEtxt" />
+
+    <TextView
+        android:id="@+id/secondageEtxt"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbgc"
+        android:hint=" Your Age..."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/secondgenderEtxt"
+        app:layout_constraintStart_toStartOf="@+id/secondgenderEtxt"
+        app:layout_constraintTop_toBottomOf="@+id/secondgenderEtxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
